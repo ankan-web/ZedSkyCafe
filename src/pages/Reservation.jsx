@@ -9,8 +9,6 @@ import {
   Phone,
   User,
   MessageCircle,
-  Sun,
-  Moon,
   Star,
   Flame,
   CheckCircle,
@@ -24,7 +22,6 @@ const ZedSkyReservation = () => {
     guests: '2',
     date: '',
     time: '',
-    seating: 'no-preference',
     specialRequests: ''
   });
 
@@ -39,7 +36,7 @@ const ZedSkyReservation = () => {
   // Generate time slots (11 AM to 10 PM)
   const generateTimeSlots = () => {
     const slots = [];
-    for (let hour = 11; hour <= 22; hour++) {
+    for (let hour = 10; hour <= 22; hour++) {
       const period = hour >= 12 ? 'PM' : 'AM';
       const displayHour = hour > 12 ? hour - 12 : hour;
       const timeStr = `${displayHour}:00 ${period}`;
@@ -167,7 +164,7 @@ const ZedSkyReservation = () => {
         // Clear the form
         setFormData({
           fullName: '', phone: '', guests: '2', date: '', 
-          time: '', seating: 'no-preference', specialRequests: ''
+          time: '', specialRequests: ''
         });
         setTouched({});
         
@@ -189,12 +186,6 @@ const ZedSkyReservation = () => {
       scrollToFormTop();
     }
   };
-
-  const seatingOptions = [
-    { value: 'rooftop', label: 'Rooftop', icon: Sun, description: 'Enjoy the skyline view' },
-    { value: 'indoor', label: 'Indoor', icon: Moon, description: 'Air-conditioned comfort' },
-    { value: 'no-preference', label: 'No Preference', icon: Sparkles, description: 'We\'ll choose the best' }
-  ];
 
   return (
     <div className="min-h-screen bg-[#050505] text-[#e5e5e5] font-['Inter'] relative">
@@ -218,9 +209,9 @@ const ZedSkyReservation = () => {
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-5 pt-8">
           <div className="inline-flex items-center gap-2 bg-[#d4af37]/20 backdrop-blur-sm border border-[#d4af37]/30 px-4 py-1.5 rounded-full mb-4">
             <Sparkles className="w-3.5 h-3.5 text-[#d4af37]" />
-            <span className="text-[#d4af37] text-xs font-semibold tracking-wider">PREMIUM ROOFTOP EXPERIENCE</span>
+            <span className="text-[#d4af37] text-xs font-semibold tracking-wider">PREMIUM EXPERIENCE</span>
           </div>
-          <h1 className="text-3xl lg:text-5xl font-bold text-white mb-3">Reserve Your Table<br className="lg:hidden" /> at Zed Sky</h1>
+          <h1 className="text-3xl lg:text-5xl font-bold text-white mb-3">Reserve Your Table<br className="lg:hidden" /> at Old Yard</h1>
           <p className="text-sm lg:text-base text-gray-300 max-w-xl mx-auto px-2">Secure your spot and enjoy an elevated cafe experience in the heart of Howrah</p>
         </div>
       </div>
@@ -371,8 +362,8 @@ const ZedSkyReservation = () => {
                   </div>
                 </div>
 
-                {/* Time Slot & Seating */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                {/* Time Slot */}
+                <div className="space-y-2">
                   {/* Time Slot */}
                   <div className="space-y-2">
                     <label className="flex items-center gap-2 text-sm font-medium text-gray-300">
@@ -404,37 +395,6 @@ const ZedSkyReservation = () => {
                         {errors.time}
                       </p>
                     )}
-                  </div>
-
-                  {/* Seating Preference */}
-                  <div className="space-y-2">
-                    <label className="flex items-center gap-2 text-sm font-medium text-gray-300">
-                      <MapPin className="w-4 h-4 text-[#d4af37]" />
-                      Seating Preference
-                    </label>
-                    <div className="grid grid-cols-3 gap-2">
-                      {seatingOptions.map(option => {
-                        const Icon = option.icon;
-                        const isSelected = formData.seating === option.value;
-                        return (
-                          <button
-                            key={option.value}
-                            type="button"
-                            onClick={() => setFormData({ ...formData, seating: option.value })}
-                            className={`flex flex-col items-center justify-center gap-1.5 p-3 rounded-xl border transition-all h-full ${
-                              isSelected
-                                ? 'bg-[#d4af37]/20 border-[#d4af37]'
-                                : 'bg-white/5 border-white/10 hover:bg-white/10'
-                            }`}
-                          >
-                            <Icon className={`w-5 h-5 ${isSelected ? 'text-[#d4af37]' : 'text-gray-400'}`} />
-                            <span className={`text-[10px] sm:text-xs font-medium tracking-wide ${isSelected ? 'text-[#d4af37]' : 'text-gray-400'}`}>
-                              {option.label}
-                            </span>
-                          </button>
-                        );
-                      })}
-                    </div>
                   </div>
                 </div>
 
@@ -489,17 +449,17 @@ const ZedSkyReservation = () => {
           <div className="mt-8 flex flex-col sm:flex-row flex-wrap items-center justify-center gap-3 sm:gap-6 text-xs text-gray-400">
             <div className="flex items-center gap-1.5">
               <Clock className="w-4 h-4 text-gray-500" />
-              <span>11:00 AM - 11:00 PM</span>
+              <span>10:00 AM - 10:15 PM</span>
             </div>
             <div className="hidden sm:block w-1.5 h-1.5 bg-gray-700 rounded-full"></div>
             <div className="flex items-center gap-1.5">
               <MapPin className="w-4 h-4 text-gray-500" />
-              <span>Ichapur More, Howrah</span>
+              <span>Dum Dum Nagerbazar</span>
             </div>
             <div className="hidden sm:block w-1.5 h-1.5 bg-gray-700 rounded-full"></div>
             <div className="flex items-center gap-1.5">
               <Star className="w-4 h-4 text-[#d4af37]" />
-              <span>4.3/5 (200+ reviews)</span>
+              <span>4.6/5 (180+ reviews)</span>
             </div>
           </div>
         </div>

@@ -57,14 +57,13 @@ const ZedSkyLounge = () => {
 
   return (
     <div className="min-h-screen bg-[#050505] text-[#e5e5e5] font-['Inter']">
-      {/* Mobile Navigation - Fixed */}
       <nav className="fixed top-0 left-0 right-0 z-50 px-5 py-4 flex items-center justify-between bg-[#050505]/80 backdrop-blur-lg border-b border-white/5 lg:px-10 lg:py-6">
         <div className="text-lg lg:text-xl font-bold tracking-wider">
-          ZED SKY <span className="text-[#d4af37]">LOUNGE</span>
+          OLD YARD <span className="text-[#d4af37]">CAFE</span>
         </div>
         
         {/* Desktop Menu */}
-        <div className="hidden lg:flex gap-8 text-sm font-medium text-gray-300">
+        <div className="hidden lg:flex gap-8 text-lg font-medium text-gray-300">
           <button onClick={() => scrollToSection('home')} className="hover:text-[#d4af37] transition-colors">
             Home
           </button>
@@ -116,7 +115,7 @@ const ZedSkyLounge = () => {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
-            src="https://storage.googleapis.com/banani-generated-images/generated-images/61f12286-ba35-4cd5-adeb-2efe3945e243.jpg"
+            src="Hero.png"
             alt="Rooftop Cafe Background"
             className="w-full h-full object-cover"
           />
@@ -125,19 +124,19 @@ const ZedSkyLounge = () => {
 
         {/* Content */}
         <div className="relative z-10 w-full px-5 lg:px-10 text-center lg:max-w-4xl lg:mx-auto lg:pt-20">
-          <div className="inline-block px-3 py-1.5 border border-[#d4af37] rounded-full text-[#d4af37] text-[10px] font-semibold tracking-wider mb-4 uppercase">
-            Howrah's Premium Rooftop
+          <div className="inline-block px-3 py-1.5 border border-[#d4af37] rounded-full text-[#d4af37] text-[15px] font-semibold tracking-wider mb-4 uppercase">
+            Welcoming experience every time
           </div>
 
           <h1 className="text-4xl lg:text-6xl font-extrabold leading-tight mb-4 text-white">
             Elevate Your Evenings at <br />
             <span className="bg-gradient-to-r from-[#d4af37] via-[#f2d06b] to-[#d4af37] bg-clip-text text-transparent">
-              Zed Sky Lounge
+              OLD YARD CAFE
             </span>
           </h1>
 
           <p className="text-base lg:text-xl text-gray-300 mb-8 max-w-2xl mx-auto font-light">
-            Where flavor meets skyline vibes. Experience the best aesthetic ambiance in town.
+            The ambiance is rustic and charming, designed to make you feel at home. Whether you’re here for a quick bite, a leisurely brunch, or to soak in the vibe.
           </p>
 
           {/* Mobile Buttons */}
@@ -160,8 +159,8 @@ const ZedSkyLounge = () => {
                 ))}
                 <StarHalf className="w-3.5 h-3.5 fill-current" />
               </div>
-              <div className="font-bold text-sm text-white">4.3/5 Rating</div>
-              <div className="text-xs text-gray-500">200+ Google Reviews</div>
+              <div className="font-bold text-sm text-white">4.6/5 Rating</div>
+              <div className="text-xs text-gray-500">180+ Google Reviews</div>
             </div>
 
             <div className="text-center">
@@ -171,11 +170,11 @@ const ZedSkyLounge = () => {
           </div>
 
           {/* Delivery Apps - Mobile */}
-          <div className="flex gap-3 justify-center mt-6 lg:hidden">
-            <a href="https://www.zomato.com/kolkata/zed-cafe-ichapur-howrah/book" target="_blank" rel="noreferrer" className="flex-1 py-2.5 bg-[#cb202d] rounded-lg font-bold text-xs text-white text-center">
+          <div className="flex gap-3 justify-center mt-6 ">
+            <a href="https://www.zomato.com/kolkata/old-yard-cafe-nagerbazar/book" target="_blank" rel="noreferrer" className="flex-1 py-2.5 bg-[#cb202d] rounded-lg font-bold text-xs text-white text-center">
               Zomato
             </a>
-            <a href="https://www.swiggy.com/restaurants/813937/dineout" target="_blank" rel="noreferrer" className="flex-1 py-2.5 bg-[#fc8019] rounded-lg font-bold text-xs text-white text-center">
+            <a href="https://www.swiggy.com/auth/?prevPath=https%3A%2F%2Fwww.swiggy.com%2Frestaurants%2Fold-yard-cafe-nagerbazar-kolkata-1132500%2Fdineout" target="_blank" rel="noreferrer" className="flex-1 py-2.5 bg-[#fc8019] rounded-lg font-bold text-xs text-white text-center">
               Swiggy
             </a>
           </div>
@@ -189,14 +188,14 @@ const ZedSkyLounge = () => {
           <div className="relative h-[340px] lg:h-[500px] rounded-xl lg:row-span-2">
             <div className="absolute top-0 left-0 w-[85%] h-[65%] z-20 border-r-2 border-b-2 border-black overflow-hidden rounded-xl">
               <img
-                src="https://storage.googleapis.com/banani-generated-images/generated-images/fcb8a3f8-07e7-42ea-aee7-d3cca1b60f8d.jpg"
+                src="COFFEE.jpg"
                 alt="Coffee"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="absolute bottom-0 right-0 w-[85%] h-[65%] z-10 overflow-hidden rounded-xl">
               <img
-                src="https://storage.googleapis.com/banani-generated-images/generated-images/e0d7729d-fc3f-4ad1-9d70-4d9e5481b77a.jpg"
+                src="ambience.jpg"
                 alt="Ambience"
                 className="w-full h-full object-cover"
               />
@@ -208,14 +207,14 @@ const ZedSkyLounge = () => {
 
           {/* Text Content */}
           <div className="animate-on-scroll opacity-0 translate-y-10 transition-all duration-700">
-            <div className="text-[#d4af37] font-semibold text-xs mb-3 tracking-wider">
-              ABOUT ZED SKY LOUNGE
+            <div className="text-[#d4af37] font-semibold text-2xl mb-3 tracking-wider">
+              ABOUT <b>OLD YARD CAFE</b>
             </div>
-            <h2 className="text-3xl lg:text-4xl font-bold mb-5 text-white">
+            <h2 className="text-xl lg:text-4xl font-bold mb-5 text-white">
               Premium Rooftop Experience
             </h2>
             <p className="text-sm lg:text-base text-gray-400 leading-relaxed mb-8">
-              Located at Ichapur More, Howrah, Zed Sky Lounge Cafe offers a premium rooftop experience with aesthetic ambiance, handcrafted beverages, and pocket-friendly pricing.
+              Welcome to Old Yard Cafe, your cozy corner in Kolkata where great food, warm hospitality, and memorable moments come together. Located at 37/a, Jessore Road, Nager Bazar More, Kolkata, our cafe is a perfect spot to relax, catch up with friends, or enjoy a quiet coffee break.
             </p>
 
             <div className="space-y-6 mb-8">
@@ -226,7 +225,7 @@ const ZedSkyLounge = () => {
                 <div>
                   <div className="font-semibold text-white text-sm mb-1">Our Location</div>
                   <div className="text-xs text-gray-500 leading-relaxed">
-                    b, 2, Dr Bholanath Chakraborty Sarani, Ichapur More, Howrah, 711104
+                    37/A, Jessore Rd, B L D Bagan, Nagerbazar, More, Kolkata, West Bengal 700074
                   </div>
                 </div>
               </div>
@@ -238,13 +237,13 @@ const ZedSkyLounge = () => {
                 <div>
                   <div className="font-semibold text-white text-sm mb-1">Opening Hours</div>
                   <div className="text-xs text-gray-500">
-                    Open daily from 11:00 AM - 11:00 PM
+                    Open daily from 	10:00 AM - 10:15 PM
                   </div>
                 </div>
               </div>
             </div>
 
-            <a href="https://maps.google.com/?q=Zed+Sky+Lounge+Howrah" target="_blank" rel="noreferrer" className="w-full lg:w-auto bg-white/5 backdrop-blur-lg border border-[#d4af37] text-[#d4af37] py-3.5 px-6 rounded-full font-semibold text-sm hover:bg-white/10 transition-colors">
+            <a href="https://maps.google.com/?q=Old+Yard+Cafe+Kolkata" target="_blank" rel="noreferrer" className="w-full lg:w-auto bg-white/5 backdrop-blur-lg border border-[#d4af37] text-[#d4af37] py-3.5 px-6 rounded-full font-semibold text-sm hover:bg-white/10 transition-colors">
               Get Directions
             </a>
           </div>
@@ -262,18 +261,18 @@ const ZedSkyLounge = () => {
           <div className="grid gap-6 lg:grid-cols-3">
             {[
               {
-                img: "Bev.jpeg",
+                img: "COFFEE.jpg",
                 title: "Signature Coffee",
                 desc: "Hand-brewed artisanal coffee blends sourced from premium estates."
               },
               {
-                img: "Gourmet.jpg",
+                img: "pizza.jpg",
                 title: "Gourmet Snacks",
                 desc: "From wood-fired pizzas to exotic appetizers, satisfying your cravings."
               },
               {
-                img: "https://storage.googleapis.com/banani-generated-images/generated-images/6ed38488-4df6-447c-a531-4eddc0c9e199.jpg",
-                title: "Rooftop Ambience",
+                img: "ambience.jpg",
+                title: "Ambience",
                 desc: "Relax under the open sky with soft music and warm lighting."
               }
             ].map((item, index) => (
@@ -313,7 +312,7 @@ const ZedSkyLounge = () => {
       <section className="py-16 px-5 lg:py-20 lg:px-10">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-8">
-            <h2 className="text-3xl lg:text-4xl font-bold text-white">Why Howrah Loves Us</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold text-white">Why People Love Us</h2>
           </div>
 
           <div className="grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-8">
@@ -339,11 +338,11 @@ const ZedSkyLounge = () => {
       <section 
         className="py-20 px-5 text-center bg-cover bg-center"
         style={{
-          backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80")'
+          backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("sitting.png")'
         }}
       >
         <h2 className="text-3xl lg:text-5xl font-extrabold mb-4 text-white leading-tight">
-          Reserve Your Spot Under the Sky
+          Reserve Your Spot at Old Yard Cafe
         </h2>
         <p className="text-base lg:text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
           Don't miss out on the best view in Howrah. Book today.
@@ -362,16 +361,16 @@ const ZedSkyLounge = () => {
           {/* Brand */}
           <div>
             <div className="text-xl font-bold text-white mb-4 tracking-wider">
-              ZED SKY <span className="text-[#d4af37]">LOUNGE</span>
+              OLD YARD <span className="text-[#d4af37]">CAFE</span>
             </div>
             <p className="text-sm text-gray-400 leading-relaxed max-w-sm">
-              A premium rooftop cafe in Howrah offering an unforgettable blend of ambiance, taste, and skyline views.
+              A premium cafe in Kolkata offering an unforgettable blend of ambiance, taste, and aesthetic views.
             </p>
             <div className="flex gap-4 mt-5">
-              <a href="https://www.instagram.com/zed_skyloungecafe/?hl=en" target="_blank" rel="noreferrer" className="w-10 h-10 bg-[#222] rounded-full flex items-center justify-center text-white hover:bg-[#d4af37] hover:text-black transition-colors">
+              <a href="https://www.instagram.com/old_yard_cafe" target="_blank" rel="noreferrer" className="w-10 h-10 bg-[#222] rounded-full flex items-center justify-center text-white hover:bg-[#d4af37] hover:text-black transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="https://www.facebook.com/p/Zed-Sky-Lounge-Cafe-61552023088023/" target="_blank" rel="noreferrer" className="w-10 h-10 bg-[#222] rounded-full flex items-center justify-center text-white hover:bg-[#d4af37] hover:text-black transition-colors">
+              <a href="https://www.facebook.com/people/OLD-Yard-Cafe/61573261092942/" target="_blank" rel="noreferrer" className="w-10 h-10 bg-[#222] rounded-full flex items-center justify-center text-white hover:bg-[#d4af37] hover:text-black transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
             </div>
@@ -392,22 +391,33 @@ const ZedSkyLounge = () => {
             <div>
               <h4 className="text-white font-semibold mb-4 text-base">Contact</h4>
               <div className="flex flex-col gap-3">
-                <div className="text-gray-400 text-sm">+91 98765 43210</div>
-                <div className="text-gray-400 text-sm">hello@zedsky.com</div>
-                <div className="text-gray-400 text-sm">11 AM - 11 PM</div>
+                <div className="text-gray-400 text-sm">+91 9851976120</div>
+                <div className="text-gray-400 text-sm">hello@oldyard.com</div>
+                <div className="text-gray-400 text-sm">10 AM - 10:15 PM</div>
               </div>
             </div>
           </div>
 
           {/* Map Placeholder */}
+          {/* Map Placeholder */}
           <div className="w-full h-40 bg-[#222] rounded-lg overflow-hidden relative">
-            <img
-              src="https://storage.googleapis.com/banani-generated-images/generated-images/4096987a-3f0e-4f72-9432-041c66bb9343.jpg"
-              alt="Map"
-              className="w-full h-full object-cover opacity-50"
-            />
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.8383974242574!2d88.41177717530195!3d22.622509079456265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89f0064e077cb%3A0x5ac0e93704194557!2sOld%20Yard%20Cafe!5e0!3m2!1sen!2sin!4v1775467756530!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+
             <div className="absolute inset-0 flex items-center justify-center">
-              <a href="https://maps.google.com/?q=Zed+Sky+Lounge+Howrah" target="_blank" rel="noreferrer" className="bg-[#050505] px-4 py-2 rounded text-xs font-semibold text-white">
+              <a
+                href="https://maps.google.com/?q=old+yard+cafe+kolkata"
+                target="_blank"
+                rel="noreferrer"
+                className="bg-[#050505] px-4 py-2 rounded text-xs font-semibold text-white"
+              >
                 View on Google Maps
               </a>
             </div>
@@ -416,7 +426,7 @@ const ZedSkyLounge = () => {
 
         {/* Copyright */}
         <div className="border-t border-[#222] mt-10 pt-6 text-center text-gray-600 text-xs">
-          © 2024 Zed Sky Lounge Cafe.
+          © 2024 Ankan Agniva Studios. All rights reserved.
         </div>
       </footer>
 

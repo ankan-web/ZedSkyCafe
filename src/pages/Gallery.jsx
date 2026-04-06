@@ -30,93 +30,75 @@ const ZedSkyGallery = () => {
   const galleryImages = [
     {
       id: 1,
-      src: "https://lh3.googleusercontent.com/gps-cs-s/AHVAwerrgjLa1xpHazRkrpLaY4sptBT1OSGs_3soBxJxlCk1th0T5dTV2BwD9zhVuVOcdipRcOHiiRgNtXey5B9epzdfIX9mHC8akve_kP1JigmHPSqid7njgpsAi3sEp4YkMYogSKMb0A=s680-w680-h510",
+      src: "gal1.jpg",
       title: 'Main Lounge Area',
       description: 'Elegant indoor seating with warm ambient lighting'
     },
     {
       id: 2,
-      src: "https://lh3.googleusercontent.com/gps-cs-s/AHVAwerlquydFBKbFAXf0yA4P8GFafw5jxOtkViSPAfmHEenmo8g_VR2upEDZJiQCLNlPjKTlZM9AZxlbz6YNkeTe6OdVgZ1Bf_RVIq__PljRBIXcXRyE5w_rh51V0RAEYC-3K7B605VzQ=s680-w680-h510",
+      src: "gal2.jpg",
       title: 'Cozy Corners',
       description: 'Perfect spots for intimate conversations'
     },
     {
       id: 3,
-      src: "https://lh3.googleusercontent.com/gps-cs-s/AHVAweoQB5oB4rEYMde7Qx9uEXqi2fG9baXQfmLhgS2lKj_5IhcsF2_EhLfa7YJb__P9_gLsAZUVQ52rho3RxysiwvEnXCZPQG3em-kwIC67IbCV4TXLTdr1LF1JDl9p0FndgxKF_F4FTReQXel2=s680-w680-h510",
+      src: "gal3.jpg",
       title: 'Modern Interior Design',
       description: 'Contemporary decor with golden accents'
     },
     {
       id: 4,
-      src: "https://lh3.googleusercontent.com/gps-cs-s/AHVAwepg9ecZP77Zi1C_CdXg51Vf8zxf9bs6g81adNXDOOIMXvLiANr3525DknNGCe4fjkipeWL_OqdmcX_c0EpuvigX9EGIJjTHka5oQS7nuYd9ypbFUBmGWFm8MVjnsLH5rKuZXXnJxw=s680-w680-h510",
+      src: "gal4.jpg",
       title: 'Grab Custard',
       description: 'Breathtaking Howrah cityscape at night'
     },
     {
       id: 5,
-      src: "https://b.zmtcdn.com/data/reviews_photos/f29/8eb3dcd9a0f4d39ee643543e10feff29_1720855175.jpg",
+      src: "gal5.jpg",
       title: 'Rooftop Seating',
       description: 'Open-air seating under the stars'
     },
     {
       id: 6,
-      src: "https://lh3.googleusercontent.com/gps-cs-s/AHVAwer0OwcIfGioGuOzt-1lCpmqcvsdwIdsv-SlxF8Qjf-NFGBgOh3kaftlT8poma7U0e6xcEEziEBJh_Vi4SBlywDL2zZiJLeSm4TY97gn5GBdbyottdO5Yvq8s4O0XCB43FDgcTM=s680-w680-h510",
+      src: "gal6.jpg",
       title: 'Night Ambience',
       description: 'Magical evenings with city lights'
     },
     {
       id: 7,
-      src: "https://lh3.googleusercontent.com/gps-cs-s/AHVAweq1B_3RUC6rjNhikaDmI2HTcEjsuxV6wZ8uV8DHL-x_GLr0AN5y3suGpZUrPAPtDXPFiJ9nfMbWWAQck9DQrdvSj1pej2GBi2ji_vXmRtWYTN1H0DBoDhqLnwG5miQlmeChST_q=s680-w680-h510",
+      src: "gal7.jpg",
       title: 'Sizzling Brownie',
       description: 'Artisanal coffee with perfect latte art'
     },
     {
       id: 8,
-      src: "https://lh3.googleusercontent.com/gps-cs-s/AHVAweor8mxzFbFUJDFYbFAB6T2GBYa6fOTXhp0_rbZr7YekUClTCec8tAtcGOrVGKjVnkscRdMid3byjxze8Kz81utN0eX48USsrg3tk8pJ6bne3-31ABCLRFRdp2UnsTvLVipxQ8WVRA=s680-w680-h510",
+      src: "gal8.jpg",
       title: 'Gourmet Pizza',
       description: 'Wood-fired thin crust pizzas'
     },
     {
       id: 9,
-      src: "https://lh3.googleusercontent.com/gps-cs-s/AHVAwer9iL33SK3bmu0ncKQVvMh8GSHdIEMntZbxYTMFSRhYm-L5OztbxsT4GAMb3AYOAeKFvU-y87LjIXmx-zstuLc8myLlbmRE_F652KMONtyFuxKLTBLm_bUwTG4dFrYHk_xZAbE=s680-w680-h510",
+      src: "gsl9.jpg",
       title: 'holly yess',
       description: 'Assorted delicacies for sharing'
     },
     {
       id: 10,
-      src: "https://lh3.googleusercontent.com/gps-cs-s/AHVAwerHTnp-CqRUKHRaqf7RP93ah_9bZkxx1nbfYKEIZ4qetAof8lxDy4Vcf53mrAg_IkkFFurzjx-D2NWnixcL3YGYI6RvE6-kX1hGwEnjb_pQwnK2vAmcCTk-WUQAykK9OeHAqtbPRA=s680-w680-h510",
+      src: "gal10.jpg",
       title: 'Cold Brew Collection',
       description: 'Refreshing cold coffee varieties'
     },
     {
       id: 11,
-      src: "https://lh3.googleusercontent.com/gps-cs-s/AHVAweqvwS3RTYUkZ5lwp9_neNZXrT3R1e8EUGG4iP09BEx1-LzmcZzf3ZJXUQNGHDc4y3sZhF1sPctSxemHqBEZXIT2yEn3OX-YdykQ79JSOBw6n8VirqFkcWnvFqdvgxabFk4Na2S7=s680-w680-h510",
+      src: "gal11.jpg",
       title: 'Mouth Watering',
       description: 'Spectacular sunset views from rooftop'
     },
     {
       id: 12,
-      src: "https://lh3.googleusercontent.com/gps-cs-s/AHVAweqFwAwF81TKryaLUucXtArQOpJ40IK73PkzhCko9jwWojQxn0Yj9aYf1VSMwxu8k_9D10dsBez5S1xCFTUKa6Ut48Iqb9A64gdini8o8CVAqnVU4lUvjTtLDMMLaGcRngNbkcVh9Q=s680-w680-h510",
+      src: "gal12.jpg",
       title: 'Evening Glow',
       description: 'City lights beginning to twinkle'
-    },
-    {
-      id: 13,
-      src: "https://lh3.googleusercontent.com/gps-cs-s/AHVAwepB6Tre7vpcTJan90kzFoJC6mEU5cPegIU5pB_mFOalTcHKIVT1DM5TC8Zjpplmc4fHVyb9GqMX6ddPlqMNaEKr-L3CDBjtugg4IZ9JbnCuyIAbUP_KnFWZd6R5doXbDEa9THQruYMQEJ8=s680-w680-h510",
-      title: 'Ordering Zone',
-      description: 'Acoustic performances every weekend'
-    },
-    {
-      id: 14,
-      src: "https://lh3.googleusercontent.com/gps-cs-s/AHVAwep5670pWfwRKvm3Zk46FYMDtV7ZlgjObWir1TUNyYIRqN1f-77rsUzWqq2PYz8U81fvoplTPsorjp4oyOc2QLghg3uuCBLhWFnCf1cgy-CZumnmcM2AWq5VokOfRYDYGSBn5ZKK=s680-w680-h510",
-      title: '8 ball pool',
-      description: 'Celebrations with a view'
-    },
-    {
-      id: 15,
-      src: "https://lh3.googleusercontent.com/gps-cs-s/AHVAweq4i4mg41Tkq_A95fOoUSF0ehwxFBv7JptN6nrbmcQp1j6C6-dzfxjI39MNzqpRFCn3TIFZBL1oQ2R1NhMwPhtN4mJK0CUt6i4omW6P5AhYuIWdxyF5AdJr3sOzxZKgwCKej_RPLxGJgkLn=s680-w680-h510",
-      title: 'Decorative Details',
-      description: 'Every corner tells a story'
     }
   ];
 
@@ -304,7 +286,7 @@ const ZedSkyGallery = () => {
                 </div>
               </div>
               <a 
-                href="https://instagram.com" 
+                href="https://www.instagram.com/old_yard_cafe/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-full lg:w-auto bg-[#d4af37] text-black px-8 py-3 rounded-full font-semibold flex items-center justify-center gap-2 hover:bg-[#b38f2e] transition-colors shrink-0"

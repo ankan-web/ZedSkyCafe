@@ -27,123 +27,112 @@ const ZedSkyMenu = () => {
   // Categories with icons
   const categories = [
     { id: 'all', name: 'All Items', icon: BookOpen },
-    { id: 'shisha', name: 'Shisha', icon: Flame },
-    { id: 'coffee', name: 'Coffee & Tea', icon: Coffee },
-    { id: 'appetizers', name: 'Appetizers', icon: UtensilsCrossed },
-    { id: 'soup', name: 'Soup', icon: Soup },
-    { id: 'salad', name: 'Salad', icon: Salad },
-    { id: 'sandwich', name: 'Sandwiches', icon: Sandwich },
-    { id: 'burger', name: 'Burgers', icon: Beef },
+    { id: 'coffee_hot', name: 'Coffee (Hot)', icon: Coffee },
+    { id: 'coffee_cold', name: 'Coffee (Cold)', icon: Coffee },
+    { id: 'tea_hot', name: 'Tea (Hot)', icon: Coffee },
+    { id: 'quenchers', name: 'Summer Quenchers', icon: Wine },
+    { id: 'shakes', name: 'Shakes', icon: Wine },
     { id: 'pizza', name: 'Pizza', icon: Pizza },
     { id: 'pasta', name: 'Pasta', icon: UtensilsCrossed },
-    { id: 'mains', name: 'Mains', icon: Beef },
-    { id: 'sizzler', name: 'Sizzlers', icon: Flame },
+    { id: 'fries', name: 'Fries', icon: UtensilsCrossed },
+    { id: 'momo', name: 'Momo', icon: UtensilsCrossed },
+    { id: 'omelettes', name: 'Omelettes', icon: UtensilsCrossed },
+    { id: 'sandwich', name: 'Sandwiches', icon: Sandwich },
     { id: 'desserts', name: 'Desserts', icon: Cake },
-    { id: 'drinks', name: 'Drinks', icon: Wine }
   ];
 
-  // Complete menu data from PDF
+  // Complete menu data from pasted text
   const menuItems = [
-    // Shisha Section
-    { id: 1, category: 'shisha', name: 'Double Apple', price: 399, description: 'Classic double apple flavor', type: 'Basic' },
-    { id: 2, category: 'shisha', name: 'Orange', price: 399, description: 'Fresh citrus orange', type: 'Basic' },
-    { id: 3, category: 'shisha', name: 'Grape', price: 399, description: 'Sweet grape flavor', type: 'Basic' },
-    { id: 4, category: 'shisha', name: 'Brain Freezer', price: 399, description: 'Minty fresh blend', type: 'Basic' },
-    { id: 5, category: 'shisha', name: 'Gum Supari', price: 499, description: 'Premium gum supari blend', type: 'Premium' },
-    { id: 6, category: 'shisha', name: 'Kiwi Spring', price: 499, description: 'Fresh kiwi with mint', type: 'Premium' },
-    { id: 7, category: 'shisha', name: 'Teen Pan Rose', price: 499, description: 'Rose flavored pan', type: 'Premium' },
-    { id: 8, category: 'shisha', name: 'Vanila Rasna', price: 499, description: 'Vanilla with rasna', type: 'Premium' },
-    { id: 9, category: 'shisha', name: 'Blue Berry Spring Water', price: 499, description: 'Blueberry with spring water', type: 'Premium' },
-    { id: 10, category: 'shisha', name: 'Elachi Mint', price: 499, description: 'Cardamom and mint', type: 'Premium' },
-    { id: 11, category: 'shisha', name: 'Lemon Mint', price: 499, description: 'Refreshing lemon mint', type: 'Premium' },
-    { id: 12, category: 'shisha', name: 'Royal Caribbean', price: 599, description: 'Royal Pan + Royal Gold + Kiwi + Rasna', type: 'Zed Special' },
-    { id: 13, category: 'shisha', name: 'White Walkers', price: 599, description: 'Brain Freezer + Orange + Mint', type: 'Zed Special' },
-    { id: 14, category: 'shisha', name: 'Napaa Valley', price: 599, description: 'Teen Pan + Grape Mint', type: 'Zed Special' },
-    { id: 15, category: 'shisha', name: 'Rose Russiana', price: 599, description: 'Rose + Gum + Spring Water', type: 'Zed Special' },
-    { id: 16, category: 'shisha', name: 'Panch Pan', price: 599, description: 'Gulabi Pan + Pan Masti + Royal Pan + Sali Pan + Pan Rasna', type: 'Zed Special' },
+    // COFFEE (HOT)
+    { id: 1, category: 'coffee_hot', name: 'Simple Hot Coffee', price: 79, description: 'A traditional Bengali coffee is a simple brew, made with a combination of coffee grounds, milk and sugar to your liking.' },
+    { id: 2, category: 'coffee_hot', name: 'Filter Coffee', price: 179, description: 'A smooth, aromatic South Indian-style filter coffee, brewed to a rich, full-bodied finish. Served with milk and sugar to your liking.' },
+    { id: 3, category: 'coffee_hot', name: 'Cafe Latte', price: 199, description: 'A balanced mix of espresso and steamed milk, topped with a light froth. A creamy and velvety coffee experience.' },
+    { id: 4, category: 'coffee_hot', name: 'Cappuccino', price: 199, description: 'Espresso combined with steamed milk and a generous layer of foam, creating a frothy and well-balanced cup.' },
+    { id: 5, category: 'coffee_hot', name: 'Espresso Shot', price: 99, description: 'Rich, concentrated coffee brewed to perfection, offering a strong and intense flavor in every sip. The purest form of coffee.' },
+    { id: 6, category: 'coffee_hot', name: 'Double Espresso Shot', price: 199, description: 'A stronger version of the espresso shot, delivering twice the richness and depth. Perfect for those who crave an intense coffee experience.' },
+    { id: 7, category: 'coffee_hot', name: 'Macchiato', price: 149, description: 'A shot of espresso with just a touch of steamed milk, resulting in a bold and creamy flavor with a smooth finish.' },
+    { id: 8, category: 'coffee_hot', name: 'Cortado', price: 199, description: 'A short, strong espresso paired with an equal amount of warm milk, creating a smooth and balanced coffee with a slight sweetness.' },
+    { id: 9, category: 'coffee_hot', name: 'Flat White', price: 249, description: 'A velvety blend of espresso and steamed milk, with a thin layer of microfoam. The perfect balance between strength and creaminess.' },
+    { id: 10, category: 'coffee_hot', name: 'Americano', price: 179, description: 'Espresso diluted with hot water, creating a rich and smooth cup of coffee with a bold, full flavor.' },
+    { id: 11, category: 'coffee_hot', name: 'Mocha', price: 229, description: 'A delightful fusion of espresso, steamed milk, and rich chocolate syrup, topped with whipped cream for a sweet, decadent finish.' },
+    { id: 12, category: 'coffee_hot', name: 'Pour Over', price: 179, description: 'A hand-brewed coffee made by slowly pouring hot water over freshly ground beans, producing a clean, bright, and flavorful cup.' },
+    { id: 13, category: 'coffee_hot', name: 'Hazelnut Cappuccino', price: 219, description: 'A cappuccino with the added richness of hazelnut syrup, offering a nutty, slightly sweet flavor that pairs perfectly with the coffee\'s foam.' },
 
-    // Coffee & Tea
-    { id: 17, category: 'coffee', name: 'Espresso Short', price: 100, description: 'Strong and concentrated coffee shot' },
-    { id: 18, category: 'coffee', name: 'Cappuccino', price: 130, description: 'Espresso with steamed milk foam' },
-    { id: 19, category: 'coffee', name: 'Cafe Latte', price: 130, description: 'Espresso with lots of steamed milk' },
-    { id: 20, category: 'coffee', name: 'Hot Chocolate', price: 130, description: 'Rich and creamy hot chocolate' },
-    { id: 21, category: 'coffee', name: 'Black Coffee', price: 90, description: 'Simple and bold black coffee' },
-    { id: 22, category: 'coffee', name: 'Cold Coffee', price: 200, description: 'Ice cream, coffee, milk blended perfectly' },
-    { id: 23, category: 'coffee', name: 'Hazelnut Cappuccino', price: 220, description: 'Rich espresso with steamed milk and roasted hazelnut essence' },
-    { id: 24, category: 'coffee', name: 'Classic Cold Brew', price: 240, description: 'Steeped for 12 hours for a smooth, bold caffeine kick' },
-    { id: 25, category: 'coffee', name: 'Asam Tea', price: 90, description: 'Traditional Assamese tea' },
-    { id: 26, category: 'coffee', name: 'Jasmine Tea', price: 90, description: 'Fragrant jasmine tea' },
-    { id: 27, category: 'coffee', name: 'Rose Jasmine Tea', price: 90, description: 'Rose and jasmine blend' },
-    { id: 28, category: 'coffee', name: 'Darjeeling Tea', price: 90, description: 'Premium Darjeeling tea' },
-    { id: 29, category: 'coffee', name: 'Masala Tea', price: 90, description: 'Spiced Indian tea' },
+    // COFFEE (COLD)
+    { id: 14, category: 'coffee_cold', name: 'Iced Latte', price: 199, description: 'A refreshing blend of chilled milk and rich espresso poured over ice-light, smooth, and perfect for a cool caffeine boost.' },
+    { id: 15, category: 'coffee_cold', name: 'Iced Americano', price: 249, description: 'Bold espresso meets chilled water and ice for a smooth, no-nonsense cold brew that\'s strong, clean, and seriously refreshing.' },
+    { id: 16, category: 'coffee_cold', name: 'Vietnamese Iced Coffee', price: 199, description: 'Intense, dark coffee poured over sweetened condensed milk and ice-bold, sweet, and silky with every sip.' },
+    { id: 17, category: 'coffee_cold', name: 'Dark Chocolate Frappe', price: 199, description: 'Indulgently thick and creamy, this chilled blend of dark chocolate and coffee is topped with whipped cream-pure mocha bliss in every sip.' },
+    { id: 18, category: 'coffee_cold', name: 'Roasted Hazelnut Frappe', price: 249, description: 'Cold-brewed espresso and roasted hazelnut flavors blended into a creamy iced frappe, topped with froth and hints of nutty sweetness.' },
+    { id: 19, category: 'coffee_cold', name: 'Affogato', price: 229, description: 'A shot of espresso with just a touch of steamed milk, resulting in a bold and creamy flavor with a smooth finish.' },
+    { id: 20, category: 'coffee_cold', name: 'Pistachio Affagato', price: 249, description: 'A short, strong espresso paired with an equal amount of warm milk, creating a smooth and balanced coffee with a slight sweetness.' },
+    { id: 21, category: 'coffee_cold', name: 'Orange Coffee', price: 179, description: 'A bright and refreshing twist on the classic coffee. Freshly brewed coffee infused with the tangy zest of orange.' },
 
-    // Soups
-    { id: 30, category: 'soup', name: 'Smoky Tomato & Red Pepper', price: 180, description: 'Soup with roasted tomatoes & red peppers flavoured with basil', dips: 'Croutons' },
-    { id: 31, category: 'soup', name: 'Mushroom Veloute', price: 200, description: 'Creamy mushroom soup and herbs' },
-    { id: 32, category: 'soup', name: 'Cilantro & Lemon Prawn', price: 250, description: 'Cilantro flavoured prawn soup with lemon' },
+    // TEA (HOT)
+    { id: 22, category: 'tea_hot', name: 'Darjeeling First Flush Tea', price: 149, description: 'Known as the "Champagne of Teas," this delicate, floral black tea is harvested in early spring, offering a light, muscatel aroma and a refreshing finish.' },
+    { id: 23, category: 'tea_hot', name: 'Darjeeling Second Flush Tea', price: 149, description: 'A richer, bolder brew with notes of stone fruits and a smooth body-perfect for those who enjoy a deeper black tea experience.' },
+    { id: 24, category: 'tea_hot', name: 'Earl Grey', price: 139, description: 'A classic black tea infused with the citrusy essence of bergamot, offering a fragrant and uplifting cup with a refined English touch.' },
+    { id: 25, category: 'tea_hot', name: 'Jasmine Tea', price: 149, description: 'A soothing green tea delicately scented with jasmine blossoms, creating a floral, aromatic brew that\'s calming and refreshing.' },
+    { id: 26, category: 'tea_hot', name: 'Kashmiri Kahwa Tea', price: 139, description: 'An exotic green tea infused with saffron, cardamom, almonds, and cinnamon-warm, spiced, and comforting like the valleys of Kashmir.' },
+    { id: 27, category: 'tea_hot', name: 'Adrak Chai', price: 99, description: 'A robust Indian tea simmered with fresh ginger, delivering a spicy, invigorating kick in every sip.' },
+    { id: 28, category: 'tea_hot', name: 'Elaichi Chai', price: 99, description: 'Aromatic and mildly sweet, this traditional tea is infused with green cardamom for a soothing, flavorful warmth.' },
+    { id: 29, category: 'tea_hot', name: 'Masala Chai', price: 119, description: 'A bold blend of black tea and Indian spices brewed with milk-rich and the ultimate comfort in a cup.' },
 
-    // Salads
-    { id: 33, category: 'salad', name: 'Caesar Salad', price: 250, description: 'Crisp romaine and iceberg lettuce tossed in caesar dressing with garlic croutons', options: 'Add grilled chicken +₹50' },
-    { id: 34, category: 'salad', name: 'The Zed Classic Grilled Chicken Salad', price: 280, description: 'Grilled chicken, exotic veggies, lettuce dressed with honey chili mustard', dips: 'Garlic Bread' },
+    // SUMMER QUENCHERS
+    { id: 30, category: 'quenchers', name: 'Cucumber Mint Mojito', price: 169, description: 'A refreshing blend of muddled cucumber and mint leaves, topped with soda and lime-perfectly cooling and hydrating.' },
+    { id: 31, category: 'quenchers', name: 'Fresh Lime Soda', price: 149, description: 'A timeless thirst-quencher made with fresh lime, soda, and a hint of salt or sugar-light, fizzy, and perfect for any weather.' },
+    { id: 32, category: 'quenchers', name: 'Aam Panna Mojito', price: 169, description: 'A tangy-sweet twist on the mojito with raw mango, mint, and spices-summer\'s favorite refresher in a glass.' },
+    { id: 33, category: 'quenchers', name: 'Blue Curacao Mojito', price: 169, description: 'Vibrant and citrusy, this electric-blue mojito mixes mint, lime, and blue curacao syrup for a bold visual and taste punch.' },
+    { id: 34, category: 'quenchers', name: 'Watermelon Mint Mojito', price: 169, description: 'Juicy watermelon chunks muddled with mint and lime, served chilled-fruity, hydrating, and irresistibly refreshing.' },
+    { id: 35, category: 'quenchers', name: 'Fresh Detox Water (Limited Serving)', price: 179, description: 'Infused with cucumber, lemon, and mint-this detox water is light, hydrating, and ideal for a wellness boost.' },
 
-    // Sandwiches
-    { id: 35, category: 'sandwich', name: 'Mediterranean Grilled Veg Sandwich', price: 180, description: 'Grilled cheese sandwich with zucchini, bellpepper and carrot', dips: 'French Fries' },
-    { id: 36, category: 'sandwich', name: 'Jerk Chicken and Honey Mustard Sandwich', price: 230, description: 'Tandoori cottage cheese and bell pepper with Indian spices', dips: 'French Fries' },
+    // SHAKES
+    { id: 36, category: 'shakes', name: 'Belgian Chocolate Shake', price: 199, description: 'A rich and indulgent shake made with premium Belgian chocolate-decadently smooth and creamy in every sip.' },
+    { id: 37, category: 'shakes', name: 'Kitkat Shake', price: 199, description: 'Crunchy KitKat chunks blended with chocolate and milk-crisp meets creamy in this dessert-like shake.' },
+    { id: 38, category: 'shakes', name: 'Oreo Shake', price: 199, description: 'Crushed Oreos swirled with milk and ice cream-classic, creamy, and crowd-pleasing.' },
+    { id: 39, category: 'shakes', name: 'Choco Chip Fantasy Shake', price: 199, description: 'Loaded with chocolate chips and creamy richness-every sip offers a delightful crunch and chocolate burst.' },
+    { id: 40, category: 'shakes', name: 'Coffee Caramel Shake', price: 199, description: 'Bold coffee meets sweet caramel in this energizing yet indulgent shake-perfectly balanced.' },
+    { id: 41, category: 'shakes', name: 'Butterscotch Shake', price: 199, description: 'A silky shake with rich butterscotch flavor and hints of toffee-sweet, smooth, and satisfyingly nostalgic.' },
+    { id: 42, category: 'shakes', name: 'Nutella Shake', price: 259, description: 'Nutella lovers\' dream-thick, nutty, chocolaty, and irresistibly smooth from start to finish.' },
 
-    // Burgers
-    { id: 37, category: 'burger', name: 'European Veg Burger', price: 200, description: 'Crispy golden fried vegetable patty with aioli', dips: 'French Fries' },
-    { id: 38, category: 'burger', name: 'The Ultimate Chicken Juicy Lucy', price: 240, description: 'Grilled juicy chicken patty and melted cheese topped with a sunny-side up egg and Texan mayo', dips: 'French Fries' },
-    { id: 39, category: 'burger', name: 'Texan Fried Chicken Burger', price: 260, description: 'Homemade Texan fried chicken patty with aioli and cheese sauce', dips: 'French Fries' },
-    { id: 40, category: 'burger', name: 'Zed Lamb Burger', price: 340, description: 'Minced lamb patty grilled to perfection with cheddar cheese and aioli', dips: 'French Fries' },
+    // PIZZA
+    { id: 43, category: 'pizza', name: 'Classic Margherita Pizza', price: 299, description: 'A timeless favourite with a soft base, rich tomato puree, and generous mozzarella cheese. Perfect for those who love it classic, simple, and satisfying.' },
+    { id: 44, category: 'pizza', name: 'Veg Farmhouse Pizza', price: 329, description: 'Topped with seasonal veggies and melty cheese. A perfect pick for veggie lovers craving a cheesy, crunchy bite.' },
+    { id: 45, category: 'pizza', name: 'Paneer Overloaded Pizza', price: 349, description: 'Soft paneer cubes marinated in Indian spices, spread over a cheesy base with fresh veggies. Every bite is full of flavor, crunch, and creamy richness.' },
+    { id: 46, category: 'pizza', name: 'Classic Barbecue Chicken Pizza', price: 379, description: 'Juicy chunks of barbecue chicken layered on a cheesy crust. Balanced with onions and BBQ sauce for a bold, hearty experience.' },
+    { id: 47, category: 'pizza', name: 'OYC Special Chicken Overloaded Pizza', price: 399, description: 'A chicken lover\'s dream with multi layers of spicy & grilled chicken. Finished with creamy cheese and a drizzle of our secret sauce.' },
 
-    // Pizza
-    { id: 41, category: 'pizza', name: 'Classic Margherita Pizza', price: 250, description: 'The classic pizza with tomato sauce, mozzarella and fresh basil' },
-    { id: 42, category: 'pizza', name: 'Genovese Pizza', price: 320, description: 'Pesto based pizza topped with bell peppers, olive, sundried tomato, onion & jalapeno' },
-    { id: 43, category: 'pizza', name: 'Royal Bengal Lamb Pizza', price: 480, description: 'Pizza with spicy minced lamb, fresh tomato mozzarella, onion and cilantro' },
-    { id: 44, category: 'pizza', name: 'Pollo Picante Pizza', price: 440, description: 'Pesto based pizza topped with grilled chicken, jalapeno & onion' },
-    { id: 45, category: 'pizza', name: 'Pesto Chicken & Olives Pizza', price: 400, description: 'Pesto based pizza with grilled chicken and olives' },
-    { id: 46, category: 'pizza', name: 'Woodfire Pizza', price: 350, description: 'Thin crust topped with premium mozzarella, basil, and olives' },
+    // PASTA
+    { id: 48, category: 'pasta', name: 'Penne Pasta Tossed In White Sauce', price: 279, description: 'Penne cooked to perfection, smothered in a creamy white sauce with subtle herbs and spices. Comfort food at its best.' },
+    { id: 49, category: 'pasta', name: 'Penne Pasta Tossed In Pink Sauce', price: 299, description: 'This ultra-delicious Pink Sauce Pasta is cooked al dente and tossed in a flavorful pink sauce. The dish is garnished with fresh basil and grated cheese.' },
+    { id: 50, category: 'pasta', name: 'Creamy Alfredo Pasta', price: 309, description: 'Creamy white sauce pasta loaded with veggies, herbs, and cheese. Rich, indulgent, and soul-satisfying.' },
+    { id: 51, category: 'pasta', name: 'Pasta In Pesto Sauce', price: 309, description: 'A classic Italian pasta tossed in olive oil, and pesto sauce made from basil, pine nuts, garlic. Simple, aromatic, and packed with flavor.' },
 
-    // Pasta
-    { id: 47, category: 'pasta', name: 'Arrabiata Brain Freezer', price: 220, description: 'Choice of pasta in spicy tomato sauce with basil and garlic', dips: 'Garlic Bread' },
-    { id: 48, category: 'pasta', name: 'The Original Mr. Alfredo', price: 250, description: 'Choice of pasta in creamy white sauce and parmesan cheese', dips: 'Garlic Bread' },
-    { id: 49, category: 'pasta', name: 'Pestogams', price: 270, description: 'Choice of pasta in creamy pesto sauce', dips: 'Garlic Bread', options: 'Add grilled chicken +₹50' },
+    // FRIES
+    { id: 52, category: 'fries', name: 'Salted French Fries', price: 119, description: 'Crispy golden fries sprinkled with just the right amount of salt. A classic munch that\'s light, crunchy, and universally loved.' },
+    { id: 53, category: 'fries', name: 'Peri Peri Fries', price: 129, description: 'Tossed in a fiery peri peri spice blend, these fries bring a bold, zesty kick with every bite. Perfect for spice lovers!' },
+    { id: 54, category: 'fries', name: 'Cheese Loaded Fries', price: 159, description: 'Crisp fries smothered in hot, melted cheese and topped with seasoning. A creamy, indulgent snack that\'s hard to resist.' },
 
-    // Mains
-    { id: 50, category: 'mains', name: 'Grilled Baramundi Fish', price: 450, description: 'Marinated bhetki grilled to perfection served with butter rice & grilled veggies' },
-    { id: 51, category: 'mains', name: 'Thai Curry with Rice', price: 300, description: 'Thai red/green curry with basil rice/garlic herb rice', options: 'Veg ₹300 | Chicken ₹350 | Prawn ₹450' },
+    // MOMO
+    { id: 55, category: 'momo', name: 'North Bengal Spl Vegetable Steam Momo', price: 149, description: 'A healthy mix of seasonal vegetables infused with North Bengal-style masalas. Light, aromatic, and steamed to preserve every natural flavor.' },
+    { id: 56, category: 'momo', name: 'North Bengal Spl Chicken Steam Momo', price: 169, description: 'Juicy minced chicken momos seasoned with North Bengal spices and herbs, steamed to tender perfection. Served with spicy red chutney for a true regional bite.' },
+    { id: 57, category: 'momo', name: 'Chicken Cheese Steam Momo', price: 179, description: 'A creamy fusion of chicken and melted cheese packed in soft momo wrappers. A rich, indulgent treat for cheese lovers.' },
+    { id: 58, category: 'momo', name: 'Crunchy Chicken Momo', price: 189, description: 'Crispy outside, juicy inside-these chicken momos are fried to golden brown perfection and served with hot garlic chutney.' },
 
-    // Sizzlers
-    { id: 52, category: 'sizzler', name: 'Oriental Sizzler', price: 450, description: 'Thai chicken curry, butter rice, Malaysian chicken satay' },
-    { id: 53, category: 'sizzler', name: 'Chicken Overload Sizzler', price: 470, description: 'Chicken Pesto Fingers, Chicken popcorn, Choice of chicken wings' },
+    // OMELETTES
+    { id: 59, category: 'omelettes', name: 'Onion Omelette', price: 89, description: 'Simple yet flavorful-this Indian-style omelette is loaded with finely chopped onions and green chilies cooked till crispy at the edges.' },
+    { id: 60, category: 'omelettes', name: 'Cheese Omelette', price: 129, description: 'Fluffy eggs folded with melted cheese, seasoned to perfection. A protein-rich classic that melts in your mouth with every bite.' },
+    { id: 61, category: 'omelettes', name: 'Spanish Omelette', price: 149, description: 'A hearty, rustic-style omelette packed with sautéed potatoes, bell peppers, onions, and herbs-perfectly golden and satisfying.' },
 
-    // Desserts
-    { id: 54, category: 'desserts', name: 'Brownie with Ice Cream', price: 220, description: 'Brownie served with a scoop of vanilla ice cream' },
-    { id: 55, category: 'desserts', name: 'Gondhoraj Creme Brulee', price: 160, description: 'Custard based dessert with crispy caramel and gandhoraj lemon' },
-    { id: 56, category: 'desserts', name: 'Zed Special Shake', price: 350, description: 'Brownie, vanilla, chocolate gems' },
+    // SANDWICHES
+    { id: 62, category: 'sandwich', name: 'Corn Cheese Sandwich', price: 189, description: 'Delicious grilled sandwich made with boiled sweet corn, onion and grated cheese.' },
+    { id: 63, category: 'sandwich', name: 'OYC Special Sandwich - Veg', price: 209, description: 'Our chef\'s special veg creation with grilled veggies, cheese, and secret herbs. Every bite bursts with creamy and crunchy goodness.' },
+    { id: 64, category: 'sandwich', name: 'Chicken Grilled Sandwich', price: 199, description: 'Tender chicken slices layered with fresh veggies, creamy mayo, and cheese. Grilled to perfection for a smoky, juicy bite in every mouthful.' },
+    { id: 65, category: 'sandwich', name: 'OYC Special Sandwich - Non Veg', price: 239, description: 'A loaded delight with grilled chicken, spicy mayo, cheese, and our signature sauces. Served hot and crispy- crafted specially for meat lovers.' },
 
-    // Drinks
-    { id: 57, category: 'drinks', name: 'Watermelon Fresca', price: 150, description: 'Fresh watermelon, celery and Indian masala, lime juice' },
-    { id: 58, category: 'drinks', name: 'Berry Sparkler', price: 300, description: 'Mix berries, lime and simple syrup' },
-    { id: 59, category: 'drinks', name: 'Summer Fizz', price: 250, description: 'Fresh orange, mint and cucumber, top up with ginger ale' },
-    { id: 60, category: 'drinks', name: 'Zed & Tonic', price: 250, description: 'Fresh Basil, yuzu puree, honey water and top up tonic' },
-    { id: 61, category: 'drinks', name: 'Apple Cinnamon Cooler', price: 200, description: 'Apple juice, cinnamon syrup, lime juice' },
-    { id: 62, category: 'drinks', name: 'Bengal Pride', price: 150, description: 'Kaffir leaf, orange juice, Pineapple juice, dash of grenadine' },
-    { id: 63, category: 'drinks', name: 'Cinderella', price: 150, description: 'Cranberry juice, basil leaf, lime juice & simple syrup' },
-    { id: 64, category: 'drinks', name: 'Love Me Like You Do', price: 250, description: 'Fresh jalapeno, guava juice, tabasco sauce, worcestershire sauce' },
-    { id: 65, category: 'drinks', name: 'Flavour Ice Tea', price: 150, description: 'Homemade tea with lemon/peach/green apple' },
-    { id: 66, category: 'drinks', name: 'Pink Lady', price: 200, description: 'Strawberry syrup, cranberry juice & orange juice' },
-    { id: 67, category: 'drinks', name: 'Mone Pore Ruby Roy', price: 200, description: 'Blueberry syrup & secret ingredient' },
-    { id: 68, category: 'drinks', name: 'Love Therapy', price: 200, description: 'Litchi juice & homemade strawberry sharba' },
-    { id: 69, category: 'drinks', name: 'Sky Blue Lagoon', price: 180, description: 'Refreshing blue curacao blend with a hint of citrus and mint' },
-    { id: 70, category: 'drinks', name: 'Kit Kat Shake', price: 200, description: 'Vanilla ice cream with kit kat, fresh cream' },
-    { id: 71, category: 'drinks', name: 'Popcorn Shake', price: 250, description: 'Vanilla ice cream with popcorn syrup' },
-    { id: 72, category: 'drinks', name: 'Oreo Shake', price: 250, description: 'Oreo biscuit, ice cream, milk' },
-
-    // Appetizers/Gourmet Bites
-    { id: 73, category: 'appetizers', name: 'Loaded Nachos', price: 260, description: 'Crispy tortilla chips loaded with melted cheese, jalapeños, and onions' },
-    { id: 74, category: 'appetizers', name: 'The Zed Burger', price: 290, description: 'Double patty with caramelized onions, secret sauce, and cheddar' },
-    { id: 75, category: 'appetizers', name: 'Zed Signature Platter', price: 380, description: 'Assorted grilled delicacies served with house special dip and garden' },
+    // DESSERT
+    { id: 66, category: 'desserts', name: 'Crunchy Vanilla', price: 149, description: 'Creamy vanilla ice cream topped with crunchy choco chips and goodness of chocolate sauce.' },
+    { id: 67, category: 'desserts', name: 'Chocolate Walnut Brownie', price: 169, description: 'These nutty, simple chocolate brownies are great to taste topped with a scoop of vanilla icecream and chocolate sauce.' },
   ];
 
   // Filter items based on category and search
@@ -171,12 +160,17 @@ const ZedSkyMenu = () => {
     return <Icon className="w-4 h-4 text-[#d4af37]" />;
   };
 
+  const getCategoryDisplayName = (categoryId) => {
+    const category = categories.find(c => c.id === categoryId);
+    return category ? category.name : categoryId;
+  };
+
   return (
     <div className="min-h-screen bg-[#050505] text-[#e5e5e5] font-['Inter']">
       {/* Header */}
       <div className="bg-gradient-to-r from-[#d4af37]/20 to-transparent py-12 px-5 lg:py-16 lg:px-10">
         <div className="max-w-7xl mx-auto">
-          <h1 className="text-4xl lg:text-5xl font-bold text-white mb-3">ZED SKY MENU</h1>
+          <h1 className="text-4xl lg:text-5xl font-bold text-white mb-3">OLD YARD MENU</h1>
           <p className="text-gray-400 text-lg">Explore Flavors · Handcrafted for the perfect rooftop vibe</p>
         </div>
       </div>
@@ -196,7 +190,7 @@ const ZedSkyMenu = () => {
             </div>
             
             <a 
-              href="/6c5c4b02fef06e8fca049ba45a185205_repaired.pdf"
+              href="/CAFE.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full lg:w-auto bg-[#d4af37] text-black px-6 py-3 rounded-full font-semibold flex items-center justify-center gap-2 hover:bg-[#b38f2e] transition-colors"
@@ -327,7 +321,7 @@ const ZedSkyMenu = () => {
                   <CategoryIcon categoryId={category} />
                 </div>
                 <h2 className="text-xl lg:text-2xl font-bold text-white capitalize">
-                  {category === 'appetizers' ? 'Gourmet Bites' : category}
+                  {getCategoryDisplayName(category)}
                 </h2>
                 <div className="flex-1 h-px bg-gradient-to-r from-[#d4af37]/30 to-transparent"></div>
               </div>
@@ -341,32 +335,7 @@ const ZedSkyMenu = () => {
                       <span className="text-[#d4af37] font-bold">₹{item.price}</span>
                     </div>
                     
-                    {/* DYNAMIC TAG STYLING HERE */}
-                    {item.type && (
-                      <span className={`inline-block text-xs px-2 py-1 rounded mb-2 border ${
-                        item.type === 'Premium' 
-                          ? 'bg-[#d4af37]/20 text-[#d4af37] border-[#d4af37]/50' 
-                          : item.type === 'Basic'
-                          ? 'bg-blue-500/20 text-blue-400 border-blue-500/50'
-                          : 'bg-purple-500/20 text-purple-400 border-purple-500/50' // For Zed Special
-                      }`}>
-                        {item.type}
-                      </span>
-                    )}
-                    
-                    <p className="text-gray-400 text-sm mb-2">{item.description}</p>
-                    
-                    {item.dips && (
-                      <p className="text-xs text-gray-500">
-                        <span className="text-[#d4af37]">Served with:</span> {item.dips}
-                      </p>
-                    )}
-                    
-                    {item.options && (
-                      <p className="text-xs text-gray-500 mt-1">
-                        <span className="text-[#d4af37]">Options:</span> {item.options}
-                      </p>
-                    )}
+                    <p className="text-gray-400 text-sm">{item.description}</p>
                   </div>
                 ))}
               </div>

@@ -171,7 +171,7 @@ const ZedSkyMenu = () => {
       <div className="bg-gradient-to-r from-[#d4af37]/20 to-transparent py-12 px-5 lg:py-16 lg:px-10">
         <div className="max-w-7xl mx-auto">
           <h1 className="text-4xl lg:text-5xl font-bold text-white mb-3">OLD YARD MENU</h1>
-          <p className="text-gray-400 text-lg">Explore Flavors · Handcrafted for the perfect rooftop vibe</p>
+          <p className="text-gray-400 text-lg">Explore Flavors · Handcrafted for the perfect vibe</p>
         </div>
       </div>
 
@@ -368,7 +368,9 @@ const ZedSkyMenu = () => {
       {/* Call to Action */}
       <div className="sticky bottom-20 lg:bottom-10 left-0 right-0 flex justify-center px-5 lg:px-10 pointer-events-none">
         <div className="bg-gradient-to-r from-[#d4af37] to-[#b8860b] text-black px-6 py-3 rounded-full font-semibold shadow-2xl flex items-center gap-3 pointer-events-auto">
-          <span className="text-sm lg:text-base">Call to Order: +91 98765 43210</span>
+          <span className="text-sm lg:text-base"><a href="tel:+919851976120">
+            <button>Call to Order +91 9851976120</button>
+          </a></span>
         </div>
       </div>
     </div>

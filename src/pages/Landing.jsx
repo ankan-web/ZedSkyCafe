@@ -23,7 +23,7 @@ import {
   ArrowRight
 } from 'lucide-react';
 
-const ZedSkyLounge = () => {
+const OldYardCafe = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   // Smooth scroll function
@@ -454,4 +454,4 @@ const ZedSkyLounge = () => {
   );
 };
 
-export default ZedSkyLounge;
+export default OldYardCafe;

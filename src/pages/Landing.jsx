@@ -123,7 +123,7 @@ const ZedSkyLounge = () => {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 w-full px-5 lg:px-10 text-center lg:max-w-4xl lg:mx-auto lg:pt-20">
+        <div className="relative z-10 w-full px-5 pt-8 lg:px-10 text-center lg:max-w-4xl lg:mx-auto lg:pt-20">
           <div className="inline-block px-3 py-1.5 border border-[#d4af37] rounded-full text-[#d4af37] text-[15px] font-semibold tracking-wider mb-4 uppercase">
             Welcoming experience every time
           </div>
@@ -211,7 +211,7 @@ const ZedSkyLounge = () => {
               ABOUT <b>OLD YARD CAFE</b>
             </div>
             <h2 className="text-xl lg:text-4xl font-bold mb-5 text-white">
-              Premium Rooftop Experience
+              Premium Experience
             </h2>
             <p className="text-sm lg:text-base text-gray-400 leading-relaxed mb-8">
               Welcome to Old Yard Cafe, your cozy corner in Kolkata where great food, warm hospitality, and memorable moments come together. Located at 37/a, Jessore Road, Nager Bazar More, Kolkata, our cafe is a perfect spot to relax, catch up with friends, or enjoy a quiet coffee break.
@@ -345,9 +345,9 @@ const ZedSkyLounge = () => {
           Reserve Your Spot at Old Yard Cafe
         </h2>
         <p className="text-base lg:text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
-          Don't miss out on the best view in Howrah. Book today.
+          Don't miss out on the best experience in Kolkata. Book today.
         </p>
-        <Link to="/reservations" className="w-full lg:w-auto bg-gradient-to-r from-[#d4af37] to-[#b8860b] text-black py-4 lg:px-12 lg:py-5 rounded-full font-bold text-lg shadow-[0_0_15px_rgba(212,175,55,0.4)]">
+        <Link to="/reservations" className="w-full lg:w-auto bg-gradient-to-r from-[#d4af37] to-[#b8860b] text-black py-4 lg:px-10 lg:py-5 rounded-full font-bold text-lg shadow-[0_0_15px_rgba(212,175,55,0.4)]">
           Reserve a Table Now
         </Link>
         <p className="mt-5 text-xs text-gray-400">
@@ -426,14 +426,9 @@ const ZedSkyLounge = () => {
 
         {/* Copyright */}
         <div className="border-t border-[#222] mt-10 pt-6 text-center text-gray-600 text-xs">
-          © 2024 Ankan Agniva Studios. All rights reserved.
+          © 2024 Ankan Studios. All rights reserved.
         </div>
       </footer>
-
-      {/* Sticky Floating Action Button - Mobile Only */}
-      <Link to="/reservations" className="fixed bottom-6 left-5 right-5 z-50 lg:hidden bg-gradient-to-r from-[#d4af37] to-[#b8860b] text-black py-4 rounded-full font-bold text-base shadow-2xl text-center">
-        Reserve Now
-      </Link>
 
       {/* Add custom animations */}
       <style jsx>{`

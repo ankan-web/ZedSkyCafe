@@ -167,9 +167,9 @@ const ZedSkyGallery = () => {
             <Camera className="w-3.5 h-3.5 text-[#d4af37]" />
             <span className="text-[#d4af37] text-xs font-semibold tracking-wider">VISUAL STORY</span>
           </div>
-          <h1 className="text-4xl lg:text-5xl font-bold text-white mb-3">Moments at Zed Sky</h1>
+          <h1 className="text-4xl lg:text-5xl font-bold text-white mb-3">Moments at Old Yard Cafe</h1>
           <p className="text-sm lg:text-base text-gray-300 max-w-2xl">
-            Capture the essence of our rooftop paradise • Every frame tells a story
+            Capture the essence of our aesthetic paradise • Every frame tells a story
           </p>
         </div>
       </div>
@@ -282,7 +282,7 @@ const ZedSkyGallery = () => {
                 </div>
                 <div>
                   <h3 className="text-white font-semibold text-lg">Follow us on Instagram</h3>
-                  <p className="text-gray-400 text-sm">@zedskylounge • Share your moments with #ZedSkyVibes</p>
+                  <p className="text-gray-400 text-sm">@oldyardcafe • Share your moments with #OldYardCafe</p>
                 </div>
               </div>
               <a 

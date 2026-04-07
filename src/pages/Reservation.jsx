@@ -212,7 +212,7 @@ const ZedSkyReservation = () => {
             <span className="text-[#d4af37] text-xs font-semibold tracking-wider">PREMIUM EXPERIENCE</span>
           </div>
           <h1 className="text-3xl lg:text-5xl font-bold text-white mb-3">Reserve Your Table<br className="lg:hidden" /> at Old Yard</h1>
-          <p className="text-sm lg:text-base text-gray-300 max-w-xl mx-auto px-2">Secure your spot and enjoy an elevated cafe experience in the heart of Howrah</p>
+          <p className="text-sm lg:text-base text-gray-300 max-w-xl mx-auto px-2">Secure your spot and enjoy an elevated cafe experience in the heart of Dumdum</p>
         </div>
       </div>
 
@@ -463,17 +463,6 @@ const ZedSkyReservation = () => {
             </div>
           </div>
         </div>
-      </div>
-
-      {/* Sticky Mobile Reserve Button (Only visible when scrolled far down past form) */}
-      <div className="lg:hidden fixed bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-[#050505] via-[#050505]/90 to-transparent pointer-events-none z-50">
-        <button 
-          onClick={scrollToFormTop}
-          className="w-full bg-gradient-to-r from-[#d4af37] to-[#b8860b] text-black py-4 rounded-xl font-bold shadow-2xl flex items-center justify-center gap-2 pointer-events-auto"
-        >
-          <Flame className="w-5 h-5" />
-          Book Table Now
-        </button>
       </div>
 
       {/* Custom animations */}

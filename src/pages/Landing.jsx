@@ -263,7 +263,7 @@ const ZedSkyLounge = () => {
               {
                 img: "COFFEE.jpg",
                 title: "Signature Coffee",
-                desc: "Hand-brewed artisanal coffee blends sourced from premium estates."
+                desc: "coffee that blends sourced from premium estates."
               },
               {
                 img: "pizza.jpg",
@@ -273,7 +273,7 @@ const ZedSkyLounge = () => {
               {
                 img: "ambience.jpg",
                 title: "Ambience",
-                desc: "Relax under the open sky with soft music and warm lighting."
+                desc: "Relax with soft music and warm lighting."
               }
             ].map((item, index) => (
               <div key={index} className="bg-white/5 backdrop-blur-lg border border-white/10 rounded-xl p-5 hover:transform hover:-translate-y-2 transition-all duration-300">
